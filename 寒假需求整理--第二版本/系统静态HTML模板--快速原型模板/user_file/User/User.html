@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0035)http://www.foodmate.net/law/shipin/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+
+<title>江西检疫局二次开发系统</title>
+<meta name="keywords" content="江西检疫局二次开发系统">
+<meta name="description" content="江西检疫局二次开发系统">
+<link rel="shortcut icon" type="images/x-icon" href="http://www.foodmate.net/favicon.ico">
+<link rel="bookmark" type="images/x-icon" href="http://www.foodmate.net/favicon.ico">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/article.css">
+<link href="css/dl.css" type="text/css" rel="stylesheet" >
+<!--[if lte IE 6]>
+<link rel="stylesheet" type="text/css" href="http://img.foodspace.net/foodmate/skin/default/ie6.css"/>
+<![endif]-->
+<script type="text/javascript">window.onerror=function(){return true;}</script><script type="text/javascript" src="js/lang.js"></script>
+<script type="text/javascript" src="js/config.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/page.js"></script>
+<style type="text/css">
+ .divcss5{border:1px solid ; color: #0099FF ;width:950px }
+ </style> 
+<body>
+<div style="height:122px">
+<iframe name="I2" height="100%" width="100%" frameborder="0" src="../../top.html" scrolling="no"> </iframe>
+</div>
+<!-- 头部结束 -->
+
+<br />
+<center>
+ <div class="divcss5"  > 
+<!--菜单选项-->
+<table width="607">
+	<tr><td width="13"><div class="breadcrumbs" id="breadcrumbs">
+	<ul ><td width="227">
+			<li>
+            <a href="../../user_file/User/user.html" role="button"
+				class="btn btn-primary btn-min" target="mainFrame">
+                <img width="61" height="41" src="../../images/userinfo.jpg" />完善个人信息</a>
+          </li>
+           </td>
+                
+		 <td width="185">	
+         	<li>
+         	<a href="../../user_file/User/user_mibao.html" role="button"
+				class="btn btn-primary btn-min" target="mainFrame">
+                <img width="61" height="41" src="../../images/psd.jpg" />设置密保</a>
+			</li>
+        </td>
+			<td width="162">
+            <li>
+            <a href="../../user_file/User/User_updatePassword.html" role="button"
+				class="btn btn-primary btn-min" target="mainFrame">
+                <img width="61" height="41" src="../../images/alterpsd.jpg" />修改密码</a>
+			</li>
+        </td>
+	  </ul>
+		<!-- .breadcrumb     class="form-control" -->
+	
+    </tr>
+   </table>
+	<br>
+	<br>	
+					<a href="../../user_file/User/user_mibao.html" target="mainFrame"
+						style="color:#FF0000; font-size:15px;">您的密保问题还没有设置,请单击这里进行设置!</a>
+					
+					<br>
+					<br>
+					<form id ="userInfoForm" action="myself?gogo=perfect" method="post" name="user"
+                     ENCTYPE="multipart/form-data" onSubmit="return checkSubmit()" >
+						<table width="83%" >
+							<thead>
+								<tr>
+									<td width="35%" align="center" valign="middle"> 
+                                    <img src="../../images/ico02.gif" width="200" height="200" /></td>
+
+									<td width="65%">
+		 					 <table height="196" border="0" class="table-hover">
+											<tbody>
+                                            <tr>
+													<td width="177"><strong>
+															<center>&nbsp;&nbsp;&nbsp;工号：</center>
+													</strong></td>
+													<td width="330"><input type="text" name ="u_id" required="required" 
+														class="form-control" id="userId"  style="height:auto"
+														placeholder="199293" disabled="disabled" />
+													</td>
+											  </tr>
+												<tr>
+													<td width="177"><strong>
+															<center>&nbsp;&nbsp;&nbsp;姓名:</center>
+													</strong>
+													</td>
+													<td width="330"><input type="text" name="u_name" value="张三"
+														onFocus="nameFocus()" onBlur="nameBlur()"
+														 class="form-control" id="u_name" style="height:auto" /><span
+														id="name_prompt"></span>
+													</td>
+
+												</tr>
+												
+												
+												<tr>
+													<td width="177"><strong>
+															<center>&nbsp;&nbsp;&nbsp;邮箱：</center>
+													</strong>
+													</td>
+													<td width="330"><input type="text" name="email" value="1728383@qq.com"
+
+														class="form-control"  id="userEmail" style="height:auto"
+														onFocus="emailFocus()" onBlur="emailBlur()" /> <span
+														id="email_prompt"></span></td>
+
+												</tr>
+											<tr>
+													<td width="177"><strong>
+															<center>&nbsp;&nbsp;&nbsp;联系方式：</center>
+													</strong>
+													</td>
+										<td width="330"><input type="tel" name="phone" value="1289348389"  onFocus="telFocus()"
+														onBlur="telBlur()" class="form-control" id="userTel"
+														style="height:auto" /><span id="tel_prompt"></span>
+											  </td>
+											  </tr>
+                                                <tr>
+													<td width="177"><strong>
+															<center>&nbsp;&nbsp;&nbsp;科室：</center>
+													</strong>
+													</td>
+										<td width="330"><input type="tel" name="phone" value="301"  onFocus="telFocus()"
+														onBlur="telBlur()" class="form-control" id="userTel"
+														style="height:auto"  disabled="disabled"/>
+												  </td>
+												</tr>
+												<tr>
+													<td width="177"><strong>
+															<center>&nbsp;头像上传:</center>
+													</strong>
+													</td>
+													<td width="330"><input type="file" name="photo"
+														onFocus="photoFocus()" onBlur="photoBlur()"  id="userPhoto"
+														style="height:auto; width:auto;" accept=".jpg,.jpeg,.peng,.gif"/>
+													</td>
+													<td width="43"><span id="photo_prompt"></span>
+													</td>
+												</tr>
+
+												
+											</tbody>
+									  </table>
+									</td>
+								</tr>
+								<tr>
+								</tr>
+								<tr>
+								</tr>
+
+								<tr>
+									<td>&nbsp;</td>
+									<td width="330">
+									
+										&nbsp;&nbsp;&nbsp;&nbsp;	&nbsp;&nbsp;&nbsp;&nbsp;		
+                                        <input type="submit" class="btn btn-primary" value="确认修改" />
+										
+								  </td>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</form>
+				</center>
+
+</div>
+			<!-- PAGE CONTENT ENDS -->
+		</div>
+		<!-- /.col -->
+	</div></div>
+</body></html>

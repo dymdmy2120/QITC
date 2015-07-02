@@ -1,0 +1,1 @@
+if(window.location.href.indexOf("foodmate.net") != -1){document.domain = "foodmate.net";}var DTPath = "http://www.foodmate.net/";var SKPath = "http://www.foodmate.net/skin/default/";var EXPath = "http://www.foodmate.net/extend/";var CKDomain = ".foodmate.net";var CKPath = "/";var CKPrex = "DgE_";

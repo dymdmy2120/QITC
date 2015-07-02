@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" >
+<!-- saved from url=(0035)://www.foodmate.net/Laws/shipin/ -->
+<html><head><meta -equiv="Content-Type" content="text/html; charset=GBK">
+
+<title>江西检疫局二次开发系统</title>
+<meta name="keywords" content="江西检疫局二次开发系统">
+<meta name="description" content="江西检疫局二次开发系统">
+<link rel="shortcut icon" type="images/x-icon" >
+<link rel="bookmark" type="images/x-icon" >
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/article.css">
+<link href="css/dl.css" type="text/css" rel="stylesheet" >
+<!--[if lte IE 6]>
+<link rel="stylesheet" type="text/css" href="://img.foodspace.net/foodmate/skin/default/ie6.css"/>
+<![endif]-->
+<script type="text/javascript">window.onerror=function(){return true;}</script><script type="text/javascript" src="js/lang.js"></script>
+<script type="text/javascript" src="js/config.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/page.js"></script>
+<link href="css/default.css" rel="stylesheet" />
+<!--  -->
+<script type="text/javascript" src="js/jquery.js" ></script>
+<script type="text/javascript" src="js/cn.js" ></script>
+<script type="text/javascript" src="js/core.js" ></script><title>JQuery MagicTabs 的基本使用</title>
+<meta name="description" content="JQuery MagicTabs 的基本使用" />
+<meta name="keywords" content="JQuery Tabs Plugin" />
+<link href="css/default-1.css"  type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="js/global.js" ></script>
+<script type="text/javascript" src="js/tabs.js"></script>
+
+<style type="text/css">
+
+ul{
+     list-style:none;
+    }
+ul li{width:250px;float:left;overflow:hidden;white-space: nowrap; text-overflow: ellipsis;display:inline; margin-top:20px; padding-left:30px}
+.bac{ 
+background:transparent url('images/bac.jpg') no-repeat scroll 0px 0px; 
+height:25px;
+ }
+</style>
+
+<body>
+<div style="height:122px">
+  <iframe name="I2" height="100%" width="100%" frameborder="0" src="../../top.html" scrolling="no"> </iframe>
+</div>
+<!-- 头部结束 -->
+<div class="m">
+  <div class="menu_l">&nbsp;</div>
+  <div class="menu_b">
+    <div>
+  <div class="search_l">                 
+        <script type="text/javascript"> var searchid = 23;</script>
+        <form id="destoon_search" action="" onsubmit="return Dsearch();" style="padding-left:5px">
+        <input type="text" id="destoon_select" class="search_s" value="风险预警">
+          <input name="kw" id="destoon_kw" type="text" class="search_i" value="请输入关键字" onfocus="if(this.value==&#39;请输入关键字&#39;) this.value=&#39;&#39;;" onkeyup="STip(this.value);" autocomplete="off">
+<input type="image" src="images/search.gif" align="absmiddle"><a href="Alarm_query.html" id="destoon_search_m"><img src="images/search_m.gif" width="50" height="20" align="absmiddle"></a></form></div>
+      
+      <div class="search_r" style="padding-top:0px">
+      <div id="search_word"><strong>热门搜索：</strong> <a href="">国内茶叶风险预警</a>&nbsp; <a href="">复原乳</a>&nbsp; <a href="">惠州</a>&nbsp; </div>
+      </div>
+    </div>
+  </div>
+  <div class="menu_r">&nbsp;</div>
+</div>
+<div class="m b10">&nbsp;</div>
+<div class="m">
+<div class="m_l f_l">
+<div class="left_box">
+<div class="pos">当前位置: <a href="">首页</a> &#187; <a href="">风险预警</a> &#187; <a href="Alarm.html">境外风险预警</a> &#187; <a href="Alarm.html">数据删除</a></div>
+<div class="b10">&nbsp;</div>
+
+
+<div id="demo" class="demoPanel"><script type="text/javascript" src="js/mousewheel.js" ></script>
+<script type="text/javascript">
+$(function(){
+	var dd = [], i=0,step=20;
+
+	for(i=0; i<10; i++){
+		var a = {
+			code: 'tab' + i,
+			title: (i*step+1)+'- ' + ((i+1)*step),
+			closeable: i>0,
+			el: 'ww' + i // You can put anything here
+			
+		};
+		dd.push(a);
+	}
+	var tabs = $('.tabs');
+	tabs.mac('tabs', {
+		tabWidth: 80, //Use fix width
+		items: dd,
+		onCloseTab: function(me, c, a){
+			tnCbx.find('[value=' + c + ']').remove();
+			return true;
+		}
+	}).selectFirst();
+	var thd = tabs.children('.head'), thm = thd.children('.main');
+	thd.mousewheel(function(e, delta, deltaX, deltaY){
+		thm.scrollLeft(thm.scrollLeft() - deltaY * 40);
+		return false;
+	});
+	//extra control
+	var tnCbx = $('#tabNoCbx').change(function(){
+		tabs.select($(this).val());
+		
+	
+	});
+	App.options(tnCbx, {
+		data: dd,
+		keyField: 'code',
+		render: function(r){
+		var index = r.code.substring(3);
+			return (index*step+1)+'- '+(index*1+1)*step;
+		}
+	});
+	<!--全选-->
+	 $('#selall').click(function(){
+	var flag = global.substring(3);
+	var temp = flag*20;
+	
+	for(var i = temp ; i< (flag*1+1)*20 ; i++) {
+	var lif = "#a"+i;
+	$(lif).addClass("bac");
+	
+	}
+	
+	
+	});
+	<!--全不选-->
+	 $('#selno').click(function(){
+	var flag = global.substring(3);
+	var temp = flag*20;
+	
+	for(var i = temp ; i< (flag*1+1)*20 ; i++) {
+	var lif = "#a"+i;
+	$(lif).removeClass("bac");
+	
+	}
+	
+	
+	});
+	
+	
+	
+});
+</script>
+
+<script>
+$(document).ready(function(){
+$("#selitems a").live("click",function(){
+var cursel = $(this).attr('id');
+
+var s = "#"+cursel;
+if(!$(s).hasClass("bac")) {
+$(s).addClass("bac");
+}
+else  {
+$(s).removeClass("bac");
+}
+
+}
+);
+
+
+
+}
+
+
+
+);
+
+
+
+</script>
+<div class="toolbar" >
+	<div class="item"><select id='tabNoCbx' style="margin: 2px;"></select></div>
+	<div class="sqrt"></div>
+	<div class="item button" id="selall">全选</div>
+	<div class="item button" id="selno">全不选</div>
+
+</div>
+<div class="clear"></div>
+<div class="tabs" style="height: 380px; margin: 4px;"></div>
+
+
+<div style="margin-top:-350px; margin-left:20px" id="selitems">
+<ul>
+</ul>
+
+<a href=""><img src="images/bg17.png" style="margin-top:28px;margin-left:100px;width:145px;height:50px"> </a>
+<a href=""><img src="images/bg18.png" style="margin-left:80px;width:145px;height:50px"> </a> </div>
+
+</div>
+</div>
+</div>
+<div class="m_n f_l">&nbsp;</div>
+<div class="m_r f_l" style="height:650px">
+<iframe name="right" height="100%" width="100%" frameborder="0" src="./right.html" scrolling="no"> </iframe>
+</div>
+</div>
+
+ </center>
+ 
+ <!-- 尾部开始 -->
+<div style="height:122px">
+<iframe name="foot" height="100%" width="100%" frameborder="0" src="../../foot.html" scrolling="no"> </iframe>
+</div></body></html>

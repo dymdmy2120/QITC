@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export>
+	<project name="student">
+		<property>学号</property>
+		<property>姓名</property>
+		<property>年龄</property>
+		<property>成绩</property>
+	</project>
+	<project name="teacher">
+		<property>工号</property>
+		<property>姓名</property>
+	</project>
+</export>

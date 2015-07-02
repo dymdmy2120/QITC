@@ -1,0 +1,8 @@
+1、其中ExcelUtil.java是导出的代码，export.xml中是标题行的内容，配置方式你懂的
+2、其他代码为测试代码，可以借鉴引用
+3、excel中的数据行是通过反射调用get方法得到的数据，所以配置标题行的时候要根据数据来
+
+response.setContentType("application/msexcel;charset=GBK");
+		 response.setHeader("Content-Disposition", "attachment;filename=\""
+		            + new String("a.xls".getBytes(), "ISO8859-1") + "\"");
+这个代码很重要，在TestServlet中有，要在导出的代码之前

@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0023)http://db.foodmate.net/ -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK" />
+<link href="../../css/dl.css" type="text/css" rel="stylesheet" />
+<link href="../../css/zch.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="http://www.9qc.com/Public/js/jquery132.js"></script>
+<script type="text/javascript" src="../../js/zch.js"></script>
+<title>食品数据库</title>
+</head>
+<body>
+<div class="top">
+  <div class="top_div">
+    <div class="f_r" id="destoon_member"></div>
+    <div> <img alt="VIP标识" src="../../images/vip.gif" align="absMiddle" /> | | 收藏本页 | <a href="http://www.foodmate.net/wap/">设为桌面形式</a> | <a href="http://www.foodmate.net/feed/">食品伙伴网</a> <img height="12" alt="" src="../../images/free.gif" width="23" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;【XXX】用户登录&nbsp;当前系统时间： <span id="time">
+      <script language="JavaScript">   
+document.getElementById('time').innerHTML=new Date().toLocaleString();   
+setInterval("document.getElementById('time').innerHTML=new Date().toLocaleString()+' '.charAt(new Date().getDay());",1000);  
+</script>
+      </span> <a href="#">【注销】</a> </div>
+  </div>
+</div>
+<div class="m">
+  <div id="header">
+    <!--logo begin-->
+    <div class="m tjjhead">
+      <div class="tjjheadl" style="margin-top:10px;"> <a href="http://www.foodmate.net/"><img width="160" height="60" src="../../images/002.gif" alt="食品伙伴网，关注食品安
+
+全，探讨食品技术" /></a> </div>
+      <div class="tjjheadc" style="text-align:center;padding-top:10px; vertical-align:text
+
+-bottom;">
+        <!--<div class="hhhh003">-->
+        <ul class="dbnews">
+          <marquee direction="up" width="450" height="60" style="overflow:hidden" scrollamount="1" onmouseout="this.start()" onmouseover="this.stop()">
+          <li><a href="index.html" target="_blank">用户您好!暂无审核消息反馈！ 2011-05-06</a></li>
+          <li><a href="index.html" target="_blank">用户您好!暂无审核消息反馈！ 2011-05-27</a></li>
+          <li><a href="index.html" target="_blank">用户您好!暂无审核消息反馈！ 2011-06-08</a></li>
+          <li><a href="index.html" target="_blank">用户您好!暂无审核消息反馈！ 2011-06-13</a></li>
+          </marquee>
+        </ul>
+      </div>
+      <!--</div>-->
+      <div class="tjjheadr">
+        <ul>
+          <li><a target="_blank" href="index.html"><img width="61" height="41" src="../../images/hby-hy.gif" /></a> <a target="_blank" href="index.html">首页导航</a> </li>
+          <li><a target="_blank" href="http://mall.foodmate.net/"><img width="61" height="41" src="../../images/tjj-sc.gif" /></a> <a target="_blank" href="http://mall.foodmate.net/">审核消息</a> </li>
+          <li><a target="_blank" href="http://hy.foodmate.net/"><img width="61" height="41" src="../../images/tjj-rc.gif" /></a> <a target="_blank" href="http://hy.foodmate.net/">个人信息</a> </li>
+          <li><a target="_blank" href="http://job.foodmate.net/"><img width="61" height="41" src="../../images/tjj-qq.gif" /></a> <a target="_blank" href="http://job.foodmate.net/">数据审核</a> </li>
+        </ul>
+      </div>
+    </div>
+    <!--logo end-->
+    <!--menu begin-->
+    <!--menu end-->
+    <div>
+      <div id="z001z"><img src="../../images/navigation.png" /></div>
+      <div class="pos" id="z001zz">当前位置: <a href="../../index.html">首页</a> &#187; <a href="#">检测能力统计分析</a></div>
+	 </div>
+      <br />
+      <!--检测评估-->
+      <fieldset class="field">
+      <legend>统计分析</legend>
+      <div align="center">
+        <table border="0">
+          <form action="DetectionAnalysisServlet" method="post" id="form1" class="item">
+          </form>
+          <tbody>
+            <tr>
+              <td colspan="2"></td>
+              <td width="516" rowspan="8"><div id="d1" class="item">
+                  <div id="d2"  class="item"> </div>
+                  <div id="d3"  class="item">
+                    <table cellpadding="0" cellspacing="8" class="table" id="table1">
+                      <tbody>
+                        <tr>
+                          <td>待选限量库</td>
+                          <td>&nbsp;</td>
+                          <td>已选限量库</td>
+                        </tr>
+                        <tr>
+                          <td height="220"><select id="s1" name="s1" style="width:150px; height:220px;" multiple="multiple">
+                            </select></td>
+                          <td><p>
+                              <input type="button" id="b1" class="s1 btn" value="--&gt;" style="width:50px; margin-top:25px;" />
+                            </p>
+                            <p>
+                              <input type="button" id="b2" class="s1 btn" value="--&gt;&gt;" style="width:50px;" />
+                            </p>
+                            <p>
+                              <input type="button" id="b3" class="s1 btn" value="&lt;--" style="width:50px;" />
+                            </p>
+                            <p>
+                              <input type="button" id="b4" class="s1 btn" value="&lt;&lt;--" style="width:50px;" />
+                            </p></td>
+                          <td><select id="s2" name="s2" style="width:150px;height:220px; margin-left:10px;" multiple="multiple">
+                            </select></td>
+                          <td align="center"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div></td>
+            </tr>
+            <tr>
+              <td width="140" height="45">输入文档标题</td>
+              <td width="205"><input name="p_name" type="text" id="pro_name" class="NFTextCenter"/></td>
+            </tr>
+            <tr>
+              <td height="46">输入检测样品</td>
+              <td width="205"><input name="m_line" type="text" id="detectlimit" class="editbox"/></td>
+            </tr>
+            <tr>
+              <td height="45">检测日期范围</td>
+              <td height="45"><input name="mbr_cname" type="text" id="item" class="editbox"/></td>
+            </tr>
+            <tr>
+              <td height="45">检&nbsp;&nbsp;&nbsp;测&nbsp;&nbsp;&nbsp;部&nbsp;&nbsp;&nbsp;门</td>
+              <td height="45"><input name="m_id" type="text" id="method" class="editbox"/></td>
+            </tr>
+            <tr>
+              <td height="45">客&nbsp;&nbsp;&nbsp;户&nbsp;&nbsp;&nbsp;订&nbsp;&nbsp;&nbsp;单</td>
+              <td height="45"><input type="file" name="Detectionresult" /></td>
+            </tr>
+            <tr>
+              <td height="45">检&nbsp;&nbsp;&nbsp;测&nbsp;&nbsp;&nbsp;结&nbsp;&nbsp;&nbsp;果</td>
+              <td><input type="file" name="Detectionresult" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </fieldset>
+      <a href="report.html" target="_blank">
+      <button type="button" id="detect" class="btn1"> 生成统计报表 </button>
+      </a> </div>
+  </div>
+</div>
+</body>
+</html>

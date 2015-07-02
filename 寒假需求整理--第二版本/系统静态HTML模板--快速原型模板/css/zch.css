@@ -1,0 +1,20 @@
+.btn1{
+  margin-top:30px;
+  width:auto; 
+  height:30px; 
+  padding:0 15px; 
+  border:none; 
+  background:url(../images/08.gif) 
+  repeat-x 0; 
+  color:#fff; 
+  font:bold 12px/30px Arial, Helvetica, sans-serif; 
+  text-align:center; 
+  cursor:pointer;
+}
+
+.field {
+  border-width: 1px; 
+  border-color: #0000FF;
+}
+
+

@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0023)http://db.foodmate.net/ -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=GBK" /> 
+  <link href="../../css/dl.css" type="text/css" rel="stylesheet" />
+  <link href="../../css/zch.css" type="text/css" rel="stylesheet" /> 
+  
+<style>
+	/*a  upload */
+.a-upload {
+	padding: 4px 10px;
+	height: 20px;
+	line-height: 20px;
+	position: relative;
+	cursor: pointer;
+	color: #888;
+	background: #fafafa;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	overflow: hidden;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1
+}
+ 
+.a-upload  input {
+	position: absolute;
+	font-size: 100px;
+	right: 0;
+	top: 0;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	cursor: pointer
+}
+ 
+.a-upload:hover {
+	color: #444;
+	background: #eee;
+	border-color: #ccc;
+	text-decoration: none
+}
+
+input.smallInput{border:1 solid black;FONT-SIZE: 9pt; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal; HEIGHT: 18px; LINE-HEIGHT: normal}
+</style>
+  <script type="text/javascript" src="http://www.9qc.com/Public/js/jquery132.js"></script>
+    <script type="text/javascript" src="../../js/zch.js"></script>  
+  <title>食品数据库</title> 
+ </head> 
+ <body> 
+  <div class="top"> 
+   <div class="top_div"> 
+    <div class="f_r" id="destoon_member"></div> 
+    <div>
+     <img alt="VIP标识" src="../../images/vip.gif" align="absMiddle" /> | | 收藏本页 | 
+     <a href="http://www.foodmate.net/wap/">设为桌面形式</a> | 
+     <a href="http://www.foodmate.net/feed/">食品伙伴网</a> 
+     <img height="12" alt="" src="../../images/free.gif" width="23" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;【XXX】用户登录&nbsp;当前系统时间：
+     <span id="time"> <script language="JavaScript">   
+document.getElementById('time').innerHTML=new Date().toLocaleString();   
+setInterval("document.getElementById('time').innerHTML=new Date().toLocaleString()+' '.charAt(new Date().getDay());",1000);  
+</script> </span>
+     <a href="#">【注销】</a>
+    </div> 
+   </div> 
+  </div> 
+  <div class="m"> 
+   <div id="header"> 
+    <!--logo begin--> 
+    <div class="m tjjhead"> 
+     <div class="tjjheadl" style="margin-top:10px;"> 
+      <a href="http://www.foodmate.net/"><img width="160" height="60" src="../../images/002.gif" alt="食品伙伴网，关注食品安
+
+全，探讨食品技术" /></a>
+     </div> 
+     <div class="tjjheadc" style="text-align:center;padding-top:10px; vertical-align:text
+
+-bottom;"> 
+      <!--<div class="hhhh003">--> 
+      <ul class="dbnews"> 
+       <marquee direction="up" width="450" height="60" style="overflow:hidden" scrollamount="1" onmouseout="this.start()" onmouseover="this.stop()"> 
+        <li><a href="index.html" target="_blank">用户您好!暂无审核消息反馈！ 2011-05-06</a></li> 
+        <li><a href="index.html" target="_blank">用户您好!暂无审核消息反馈！ 2011-05-27</a></li> 
+        <li><a href="index.html" target="_blank">用户您好!暂无审核消息反馈！ 2011-06-08</a></li> 
+        <li><a href="index.html" target="_blank">用户您好!暂无审核消息反馈！ 2011-06-13</a></li> 
+       </marquee> 
+      </ul> 
+     </div> 
+     <!--</div>--> 
+     <div class="tjjheadr"> 
+      <ul> 
+       <li><a target="_blank" href="index.html"><img width="61" height="41" src="../../images/hby-hy.gif" /></a> <a target="_blank" href="index.html">首页导航</a> </li> 
+       <li><a target="_blank" href="http://mall.foodmate.net/"><img width="61" height="41" src="../../images/tjj-sc.gif" /></a> <a target="_blank" href="http://mall.foodmate.net/">审核消息</a> </li> 
+       <li><a target="_blank" href="http://hy.foodmate.net/"><img width="61" height="41" src="../../images/tjj-rc.gif" /></a> <a target="_blank" href="http://hy.foodmate.net/">个人信息</a> </li> 
+       <li><a target="_blank" href="http://job.foodmate.net/"><img width="61" height="41" src="../../images/tjj-qq.gif" /></a> <a target="_blank" href="http://job.foodmate.net/">数据审核</a> </li> 
+      </ul> 
+     </div> 
+    </div> 
+    <!--logo end--> 
+    <!--menu begin--> 
+    <!--menu end--> 
+</div>
+ <div id="z001z"><img src="../../images/navigation.png" /></div>
+   	<div class="pos" id="z001zz">当前位置: <a href="../../index.html">首页</a> &#187; <a href="#">检测情况评估</a> 
+<!--检测评估-->
+<div align="center">
+<fieldset align="left" style="width:900px;">
+    <legend>检测能力评估</legend>
+<div align="center" style="font:bold 12px/30px Arial, Helvetica, sans-serif; ">
+
+  <table bgcolor="#e0effe" cellpadding="3" cellspacing="1">
+  <form action="DetectionAnalysisServlet" method="post" id="form1" >
+    <tr>
+      <td colspan="2">
+      <td width="516" rowspan="8"><div id="d1">
+          <div id="d2" class="shortselect">选择要显示的表:
+          <select id="c1" name="c1" onchange="selectchina()" class="smallInput">
+                      <option value="limit">限量库</option>
+                      <option value="detection">检测经历</option>
+                      <option value="quality">实验室资质</option>
+                    </select>
+            &nbsp;&nbsp;&nbsp;
+            <span id="lab" name="lab" >
+					 <select id="laboratory" name="laboratory" style="width:100px" class="smallInput">
+					 <c:forEach var="lab" items="${labName}">
+					  <option value="${lab }">${lab }</option>
+					 </c:forEach>
+                    </select>
+                  </span>
+            <div id="show" style="color:#FF3300">XXX的字段选择</div>
+          </div>
+          <div id="d3">
+            <table cellpadding="0" cellspacing="8" class="table" id="table1">
+              <tr>
+                <td>待选字段</td>
+                <td>&nbsp;</td>
+                <td>已选字段</td>
+              </tr>
+              <tr>
+                <td height="220"><select id="s1" name="s1" style="width:150px; height:220px;" multiple="multiple">
+                   
+                  </select></td>
+                <td><p>
+                    <input type="button" id="b1" class="smallInput" value="--&gt;" style="width:50px; margin-top:25px;"/>
+                  </p>
+                  <p>
+                    <input type="button" id="b2" class="smallInput" value="--&gt;&gt;" style="width:50px;" />
+                  </p>
+                  <p>
+                    <input type="button" id="b3" class="smallInput" value="&lt;--" style="width:50px;" />
+                  </p>
+                  <p>
+                    <input type="button" id="b4" class="smallInput" value="&lt;&lt;--" style="width:50px;" />
+                  </p></td>
+                <td><select id="s2" name="s2" style="width:150px;height:220px; margin-left:10px;" multiple="multiple">
+                  </select>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div></td>
+    </tr>
+    <tr>
+      <td width="140" height="45">输入样品</td>
+      <td width="205"><input name="p_name" type="text" id="pro_name" class="smallInput"></td>
+    </tr>
+    <tr>
+      <td height="46">输入测定底限</td>
+      <td width="205"><input name="m_line" type="text" id="detectlimit" class="smallInput"></td>
+    </tr>
+    <tr>
+      <td height="23">输入检测项目</td>
+      <td height="23"><input name="mbr_cname" type="text" id="item" class="smallInput"></td>
+    </tr>
+    <tr>
+      <td height="23">输入检测方法</td>
+      <td height="23"><input name="m_id" type="text" id="method" class="smallInput"></td>
+    </tr>
+    <tr>
+      <td height="54">输入残留物定义</td>
+      <td height="54"><input  name="residue" type="text" id="residue" class="smallInput"></td>
+    </tr>
+    <tr>
+      <td height="48">选择标准</td>
+      <td>
+        <select multiple="multiple" name="hazardsName" id="hazardsName" >
+							<c:forEach var="entry" items="${list}">
+								<option value="${entry}" >${entry}</option>
+							</c:forEach>
+					</select>
+        <label>需要选择多个标准请按Ctrl+“标准”点击</label>
+      </td>
+    </tr>
+    <tr>
+      <td height="26">数据导入</td>
+      <td align="left" ><a href="javascript:;" class="a-upload">
+<input id="uploadfile" name="DetectionScheme" type="file" class="form-control" class="form-control" accept=".xls" style="width:175px"/>选择上传文件</a></td>
+    </tr>
+    </tr>
+    </form>
+  </table>
+
+
+</div>
+
+  </fieldset>
+</div>
+
+<div align="center">
+	<a href="result.html"><button type="button" id="detect" class="btn1">检&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;测 </button></a>
+ </div>
+</body>
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0023)http://db.foodmate.net/ -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<link href="../../css/dl.css" type="text/css" rel="stylesheet">
+<style type="text/css">
+	
+	a:link,a:visited{font-size:12px;color:#666;text-decoration:none;}
+	a:hover{color:#ff0000;text-decoration:underline;}
+	#Tab{margin:20 auto;width:950px;border:1px solid #BCE2F3;}
+	.Menubox{height:28px;border-bottom:1px solid #64B8E4;background:#E4F2FB;}
+	.Menubox ul{list-style:none;margin:7px 40px;padding:0;position:absolute;}
+	.Menubox ul li{float:left;background:#64B8E4;line-height:20px;display:block;cursor:pointer;width:123px;text-align:center;color:#fff;font-weight:bold;border-top:1px solid #64B8E4;border-left:1px solid #64B8E4;border-right:1px solid #64B8E4;font-size:15px;}
+	.Menubox ul li.hover{background:#fff;border-bottom:1px solid #fff;color:#147AB8;}
+	.Contentbox{clear:both;margin-top:0px;border-top:none;height:181px;padding-top:8px;height:100%;}
+	.Contentbox ul{list-style:none;margin:7px;padding:0;}
+	.Contentbox ul li{line-height:24px;border-bottom:1px  groove #ccc;}
+	h1 span {color:#FF0000}
+	h2 span {color:#FF0000}
+	h2 p { line-height:30px; margin-left:15px}
+	h3 strong {color:#0000CC; font-size:20px; margin-left:50px}
+ </style>
+<script>
+	<!--
+	function setTab(name,cursel,n){
+
+	for(i=1;i<=n;i++){
+	var menu=document.getElementById(name+i);
+	var con=document.getElementById("con_"+name+"_"+i);
+	menu.className=i==cursel?"hover":"";
+	con.style.display=i==cursel?"block":"none";
+	}
+	}
+	//-->
+ </script>
+<script type="text/javascript" src="http://www.9qc.com/Public/js/jquery132.js"></script>
+<title>食品数据库</title>
+</head>
+<body>
+<div class="top">
+  <div class="top_div">
+    <div class="f_r" id="destoon_member"></div>
+    <div><img alt="VIP标识" src="./images/vip.gif" align="absMiddle"> | |
+      收藏本页
+      | <a href="http://www.foodmate.net/wap/">设为桌面形式</a> | <a href="http://www.foodmate.net/feed/">食品伙伴网</a> <img height="12" alt="" src="./images/free.gif" width="23"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;【XXX】用户登录&nbsp;当前系统时间：<span id="time">
+      <script language="JavaScript">   
+document.getElementById('time').innerHTML=new Date().toLocaleString();   
+setInterval("document.getElementById('time').innerHTML=new Date().toLocaleString()+' '.charAt(new Date().getDay());",1000);  
+</script>
+      </span><a href="#">【注销】</a> </div>
+  </div>
+</div>
+<div class="m">
+<div id="header">
+<div class="m tjjhead">
+  <div class="tjjheadl" style="margin-top:10px;"> <a href="http://www.foodmate.net/"><img width="160" height="60" src="./images/002.gif" alt="食品伙伴网，关注食品安
+
+全，探讨食品技术" /></a></div>
+  <div class="tjjheadc" style="text-align:center;padding-top:10px; vertical-align:text
+
+-bottom;">
+    <!--<div class="hhhh003">-->
+    <ul class="dbnews">
+      <marquee direction="up" width="450" height="60" style="overflow:hidden" scrollamount="1" onmouseout="this.start()" onmouseover="this.stop()">
+      <li><a href="index.html" target="_blank">用户您好!暂无审核消息反馈！ 2011-05-06</a></li>
+      <li><a href="index.html" target="_blank">用户您好!暂无审核消息反馈！  2011-05-27</a></li>
+      <li><a href="index.html" target="_blank">用户您好!暂无审核消息反馈！   2011-06-08</a></li>
+      <li><a href="index.html" target="_blank">用户您好!暂无审核消息反馈！   2011-06-13</a></li>
+      </marquee>
+    </ul>
+  </div>
+  <!--</div>-->
+  <div class="tjjheadr">
+    <ul>
+      <li><a target="_blank" href="index.html"><img width="61" height="41" src="./images/hby-hy.gif" /></a> <a target="_blank" href="index.html">首页导航</a> </li>
+      <li><a target="_blank" href="http://mall.foodmate.net/"><img width="61" height="41" src="./images/tjj-sc.gif" /></a> <a target="_blank" href="http://mall.foodmate.net/">审核消息</a> </li>
+      <li><a target="_blank" href="http://hy.foodmate.net/"><img width="61" height="41" src="./images/tjj-rc.gif" /></a> <a target="_blank" href="http://hy.foodmate.net/">个人信息</a> </li>
+      <li><a target="_blank" href="http://job.foodmate.net/"><img width="61" height="41" src="./images/tjj-qq.gif" /></a> <a target="_blank" href="http://job.foodmate.net/">数据审核</a> </li>
+    </ul>
+  </div>
+</div>
+</div>
+<div id="z001z"><img src="../../images/navigation.png" /></div>
+   	<div class="pos" id="z001zz">当前位置: <a href="../../index.html">首页</a> &#187; <a href="detectionScheme.html">检测能力统计分析</a> &#187; <a href="http://www.foodmate.net/law/jiben/">统计报表</a> &#187; word生成</div>
+<!--logo begin-->
+<!--logo end-->
+<!--menu begin-->
+<!--menu end-->
+<div class="container" style="margin-left:0px">
+<br/><br/>
+  <div style="margin-top:15px; font-size:15px; font-weight:bold; background:#64B8E4">
+    <form>
+      选择年份：
+      <select>
+        <option>2014</option>
+        <option>2015</option>
+      </select>
+      &nbsp;选择月份：
+      <select>
+        <option>1</option>
+        <option>12</option>
+        <option>3</option>
+      </select>
+      至
+      <select>
+        <option>12</option>
+        <option>2</option>
+        <option>3</option>
+      </select>
+      &nbsp;选择地区：
+      <select>
+        <option>境外</option>
+        <option>境内</option>
+        <option>境内外</option>
+      </select>
+      输入标题：
+      <input type="text"/>
+      &nbsp;
+      <input type="button" value="统计">
+    </form>
+  </div>
+  <h1 class="page-header"> <small> 选择显示通报字段 </small> </h1>
+  <div id="Tab">
+    <div class="Menubox">
+      <ul>
+        <li id="menu1" onmouseover="setTab('menu',1,7)" class="hover">国家</li>
+        <li id="menu2" onmouseover="setTab('menu',2,7)" >月份</li>
+        <li id="menu3" onmouseover="setTab('menu',3,7)" >产品分类</li>
+        <li id="menu4" onmouseover="setTab('menu',4,7)">不合格项目分类</li>
+        <li id="menu5" onmouseover="setTab('menu',5,7)" >不合格项目</li>
+        <li id="menu6" onmouseover="setTab('menu',6,7)" >采取的措施</li>
+        <li id="menu7" onmouseover="setTab('menu',7,7)" >查看全部</li>
+      </ul>
+    </div>
+    <div class="Contentbox">
+      <!--国家-->
+      <div id="con_menu_1" class="hover">
+        <div >
+          <h1 align="center"><span>2010年境外</span>食品风险预警分析报告</h1>
+          <p>
+          <h2>&nbsp;&nbsp;&nbsp;&nbsp;据统计，<span>2010年境外</span>食品预警通报<span>547</span>例，其中对中国出口食品预警通报<span>305</span>例，占比<span>10.6%</span>。</h2>
+          </p>
+        </div>
+        <ul>
+          <li><img src="../../images/report.jpg"/></li>
+        </ul>
+        <div >
+          <div >
+            <h2>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;<span>2012年</span>，共有 <span>26个国家</span> 发布了产品通报。其中，<span>意大利</span> 发布通报最多，共<span>115</span>项，占<span>境外</span> 产品通报总数的 <span>21.02%</span>； 其次为 <span>德国</span>， 共<span>66</span>项， 占比 <span>12.07%</span>；<span>英国</span> 位列第三位，<span>59</span>项，占比 <span>10.79%</span>。上述三国合计占境外产品通报总数的 <span>43.88%</span>。 具体情况如上图</p>
+            </h2>
+            <h2>
+              <p>其中，针对中国（国家地区里面包含原产地为中国次数最多的）的食品通报，<span>英国</span>发布通报最多。</p>
+            </h2>
+          </div>
+        </div>
+      </div>
+      <!--月份-->
+      <div id="con_menu_2" style="display:none">
+        <div >
+          <h1 align="center"><span>2010年境外</span>食品风险预警分析报告</h1>
+          <p>
+          <h2>&nbsp;&nbsp;&nbsp;&nbsp;据统计，<span>2010年境外</span>食品预警通报<span>547</span>例，其中对中国出口食品预警通报<span>305</span>例，占比<span>10.6%</span>。 </h2>
+          </p>
+        </div>
+        <ul>
+          <li><img src="../../images/report.jpg"/></li>
+        </ul>
+        <div >
+          <div >
+            <h2>
+              <p> &nbsp;从<span>2010年</span>全年来看，<span>3月和6月</span>通报量较大。 具体情况如上图</p>
+            </h2>
+            <h2>
+              <p>其中，针对中国（国家地区里面包含原产地为中国次数最多的）的食品通报，<span>9月份</span>发布通报最多。</p>
+            </h2>
+          </div>
+        </div>
+      </div>
+      <!--产品分类-->
+      <div id="con_menu_3" style="display:none">
+        <div >
+          <h1 align="center"><span>2010年境外</span>食品风险预警分析报告</h1>
+          <p>
+          <h2>&nbsp;&nbsp;&nbsp;&nbsp;据统计，<span>2010年境外</span>食品预警通报<span>547</span>例，其中对中国出口食品预警通报<span>305</span>例，占比<span>10.6%</span>。</h2>
+          </p>
+        </div>
+        <ul>
+          <li><img src="../../images/report.jpg"/></li>
+        </ul>
+        <div >
+          <div >
+            <h2>
+              <p>&nbsp;<span>2012年</span>，在 <span>境外</span> 发布的 <span>547项</span>（对2012年期间的通报条数进行统计）通报中，<span>食品直接接触类产品</span>被通报次数最多，共 <span>218项</span>，占比 <span>39.85%</span>；其次为 <span>坚果</span>，共 <span>73项</span>，占比 <span>13.35%</span>；<span>烘焙制品</span>位列第三，共 <span>55项</span>，占比 <span>10.05%</span>。具体情况如上图</p>
+            </h2>
+            <h2>
+              <p>其中，针对中国（国家地区里面包含原产地为中国次数最多的）的食品通报，<span>食品直接接触类产品</span>被通报次数最多。</p>
+            </h2>
+          </div>
+        </div>
+      </div>
+      <!--不合格项目分类-->
+      <div id="con_menu_4" style="display:none">
+        <div >
+          <h1 align="center"><span>2010年境外</span>食品风险预警分析报告</h1>
+          <p>
+          <h2>&nbsp;&nbsp;&nbsp;&nbsp;据统计，<span>2010年境外</span>食品预警通报<span>547</span>例，其中对中国出口食品预警通报<span>305</span>例，占比<span>10.6%</span>。</h2>
+          </p>
+        </div>
+        <ul>
+          <li><img src="../../images/report.jpg"/></li>
+        </ul>
+        <div >
+          <div >
+            <h2>
+              <p>&nbsp;<span>2012年</span>，<span>境外</span>对中国食品发布通报的原因中，因 <span>物质迁移</span> 而被通报的食品数量最多，共 <span>114项</span>，占比 <span>20.84%</span>；其次为 <span>重金属含量超标</span>，<span>98项</span>，占比 <span>17.92%</span>；位居第三的是 <span>毒枝菌素</span>，<span>62项</span>，占比 <span>11.33%</span>。具体情况如上图</p>
+            </h2>
+            <h2>
+              <p>其中，针对中国（国家地区里面包含原产地为中国次数最多的）的食品通报，因 <span>物质迁移</span>而被通报的食品数量最多。</p>
+            </h2>
+          </div>
+        </div>
+      </div>
+      <!--不合格项目-->
+      <div id="con_menu_5" style="display:none">
+        <div >
+          <h1 align="center"><span>2010年境外</span>食品风险预警分析报告</h1>
+          <p>
+          <h2>&nbsp;&nbsp;&nbsp;&nbsp;据统计，<span>2010年境外</span>食品预警通报<span>547</span>例，其中对中国出口食品预警通报<span>305</span>例，占比<span>10.6%</span>。</h2>
+          </p>
+        </div>
+        <ul>
+          <li><img src="../../images/report.jpg"/></li>
+        </ul>
+        <div >
+          <div >
+            <h2>
+              <p>&nbsp; <span>2012年</span>，<span>境外</span>对中国食品发布通报的原因中，因 <span>沙门氏菌污染</span>而被通报的食品数量最多，共 <span>114项</span>，占比 <span>20.84%</span>；其次为 <span>未标识致敏原：牛奶</span>，共 <span>98项</span>，占比 <span>17.92%</span>；位居第三的是 <span>可能存在化学污染</span>，<span>62项</span>，占比 <span>11.33%</span>。具体情况见上图</p>
+            </h2>
+            <h2>
+              <p>其中，针对中国（国家地区里面包含原产地为中国次数最多的）的食品通报，因 <span>沙门氏菌污染</span>而被通报的食品数量最多。</p>
+            </h2>
+          </div>
+        </div>
+      </div>
+      <!--采取措施-->
+      <div id="con_menu_6" style="display:none">
+        <div >
+          <h1 align="center"><span>2010年境外</span>食品风险预警分析报告</h1>
+          <p>
+          <h2>&nbsp;&nbsp;&nbsp;&nbsp;据统计，<span>2010年境外</span>食品预警通报<span>547</span>例，其中对中国出口食品预警通报<span>305</span>例，占比<span>10.6%</span>。</h2>
+          </p>
+        </div>
+        <ul>
+          <li><img src="../../images/report.jpg"/></li>
+        </ul>
+        <div >
+          <div >
+            <h2>
+              <p>&nbsp;<span>2012年</span>，在 <span>境外</span>食品通报采取的措施中，<span>重新派遣</span>采取的次数最多，达 <span>115项</span>，占比 <span>21.02%</span>；其次为 <span>撤出市场措施</span>，<span>101项</span>，占比 <span>18.46%</span>；<span>禁止进口</span>位居第三，<span>77项</span>，占比 <span>14.08%</span>。具体情况见上图。</p>
+            </h2>
+            <h2>
+              <p>其中，针对中国（国家地区里面包含原产地为中国次数最多的）的食品通报，<span>重新派遣</span>采取的次数最多。</p>
+            </h2>
+          </div>
+        </div>
+      </div>
+      <!--查看全部-->
+      <div id="con_menu_7" style="display:none">
+        <div >
+          <h1 align="center"><span>2010年境外</span>食品风险预警分析报告</h1>
+          <p>
+          <h2>&nbsp;&nbsp;&nbsp;&nbsp;据统计，<span>2010年境外</span>食品预警通报<span>547</span>例，其中对中国出口食品预警通报<span>305</span>例，占比<span>10.6%</span>。</h2>
+          </p>
+        </div>
+        <!--国家-->
+        <h3>&nbsp;<strong>1.产品通报的国家</strong></h3>
+        <ul>
+          <li><img src="../../images/report.jpg"/></li>
+        </ul>
+        <div >
+          <h2>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;<span>2012年</span>，共有 <span>26个国家</span> 发布了产品通报。其中，<span>意大利</span> 发布通报最多，共<span>115</span>项，占<span>境外</span> 产品通报总数的 <span>21.02%</span>； 其次为 <span>德国</span>， 共<span>66</span>项， 占比 <span>12.07%</span>；<span>英国</span> 位列第三位，<span>59</span>项，占比 <span>10.79%</span>。上述三国合计占境外产品通报总数的 <span>43.88%</span>。 具体情况如上图</p>
+          </h2>
+          <h2>
+            <p>其中，针对中国（国家地区里面包含原产地为中国次数最多的）的食品通报，<span>英国</span>发布通报最多。</p>
+          </h2>
+        </div>
+        <!--月份-->
+        <h3>&nbsp;<strong>2.各月份产品通报的情况</strong></h3>
+        <ul>
+          <li><img src="../../images/report.jpg"/></li>
+        </ul>
+        <div >
+          <h2>
+            <p> &nbsp;从<span>2010年</span>全年来看，<span>3月和6月</span>通报量较大。 具体情况如上图</p>
+          </h2>
+          <h2>
+            <p>其中，针对中国（国家地区里面包含原产地为中国次数最多的）的食品通报，<span>9月份</span>发布通报最多。</p>
+          </h2>
+        </div>
+        <!--产品分类-->
+        <h3>&nbsp;<strong>3.重点通报的产品分类通报的情况</strong></h3>
+        <ul>
+          <li><img src="../../images/report.jpg"/></li>
+        </ul>
+        <div >
+          <h2>
+            <p>&nbsp;<span>2012年</span>，在 <span>境外</span> 发布的 <span>547项</span>（对2012年期间的通报条数进行统计）通报中，<span>食品直接接触类产品</span>被通报次数最多，共 <span>218项</span>，占比 <span>39.85%</span>；其次为 <span>坚果</span>，共 <span>73项</span>，占比 <span>13.35%</span>；<span>烘焙制品</span>位列第三，共 <span>55项</span>，占比 <span>10.05%</span>。具体情况如上图</p>
+          </h2>
+          <h2>
+            <p>其中，针对中国（国家地区里面包含原产地为中国次数最多的）的食品通报，<span>食品直接接触类产品</span>被通报次数最多。</p>
+          </h2>
+        </div>
+        <!--不合格项目分类-->
+        <h3>&nbsp;<strong>4.合格项目分类通报的情况</strong></h3>
+        <ul>
+          <li><img src="../../images/report.jpg"/></li>
+        </ul>
+        <div >
+          <h2>
+            <p>&nbsp;<span>2012年</span>，<span>境外</span>对中国食品发布通报的原因中，因 <span>物质迁移</span> 而被通报的食品数量最多，共 <span>114项</span>，占比 <span>20.84%</span>；其次为 <span>重金属含量超标</span>，<span>98项</span>，占比 <span>17.92%</span>；位居第三的是 <span>毒枝菌素</span>，<span>62项</span>，占比 <span>11.33%</span>。具体情况如上图</p>
+          </h2>
+          <h2>
+            <p>其中，针对中国（国家地区里面包含原产地为中国次数最多的）的食品通报，因 <span>物质迁移</span>而被通报的食品数量最多。</p>
+          </h2>
+        </div>
+        <!--不合格项目-->
+        <h3>&nbsp;<strong>5不.合格项目通报的情况</strong></h3>
+        <ul>
+          <li><img src="../../images/report.jpg"/></li>
+        </ul>
+        <div >
+          <h2>
+            <p>&nbsp; <span>2012年</span>，<span>境外</span>对中国食品发布通报的原因中，因 <span>沙门氏菌污染</span>而被通报的食品数量最多，共 <span>114项</span>，占比 <span>20.84%</span>；其次为 <span>未标识致敏原：牛奶</span>，共 <span>98项</span>，占比 <span>17.92%</span>；位居第三的是 <span>可能存在化学污染</span>，<span>62项</span>，占比 <span>11.33%</span>。具体情况见上图</p>
+          </h2>
+          <h2>
+            <p>其中，针对中国（国家地区里面包含原产地为中国次数最多的）的食品通报，因 <span>沙门氏菌污染</span>而被通报的食品数量最多。</p>
+          </h2>
+        </div>
+        <!--食品通报采取的主要措施-->
+        <h3>&nbsp;<strong>6.食品通报采取的主要措施通报的情况</strong></h3>
+        <ul>
+          <li><img src="../../images/report.jpg"/></li>
+        </ul>
+        <div >
+          <h2>
+            <p>&nbsp;<span>2012年</span>，在 <span>境外</span>食品通报采取的措施中，<span>重新派遣</span>采取的次数最多，达 <span>115项</span>，占比 <span>21.02%</span>；其次为 <span>撤出市场措施</span>，<span>101项</span>，占比 <span>18.46%</span>；<span>禁止进口</span>位居第三，<span>77项</span>，占比 <span>14.08%</span>。具体情况见上图。</p>
+          </h2>
+          <h2>
+            <p>其中，针对中国（国家地区里面包含原产地为中国次数最多的）的食品通报，<span>重新派遣</span>采取的次数最多。</p>
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="bottom">
+    <li><a href="http://www.foodmate.net/extend/about.html" target="_blank">关于我们</a>　<a href="http://www.foodmate.net/ad/" target="_blank">广告业务</a>　<a href="http://www.foodmate.net/sitemap/" target="_blank">网站地图</a>　　<a href="http://www.foodmate.net/link/" target="_blank">友情链接</a>　　 </li>
+    <li><span class="S">Copyright&#169; 2000-2006 foodmate.net Inc. All rights reserved <a href="http://www.foodmate.net/">食品伙伴网</a> 版权所有</span> </li>
+    <li><span class="S">技术问题　<a href="http://bbs.foodmate.net/">请到论坛留言　</a>电话：0535-2123163　传真：0535-2129828 </span><br>
+      <script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F2aeaa32e7cee3cfa6e2848083235da9f' type='text/javascript'%3E%3C/script%3E"));
+</script>
+      <script src="./js/h.js" type="text/javascript"></script>
+      <a href="http://tongji.baidu.com/hm-web/welcome/ico?s=2aeaa32e7cee3cfa6e2848083235da9f" target="_blank"><img border="0" src="./images/21.gif" width="20" height="20"></a>
+      <script language="javascript" type="text/javascript" src="./js/2070176.js"></script>
+      <a href="http://www.51.la/?2070176" target="_blank"><img alt="51.la 专业、免费、强健的访问统计" src="./images/icon_0.gif" style="border:none"></a>
+      <noscript>
+      &lt;a href="http://www.51.la/?2070176" target="_blank"&gt;&lt;img alt="&amp;#x6211;&amp;#x8981;&amp;#x5566;&amp;#x514D;&amp;#x8D39;&amp;#x7EDF;&amp;#x8BA1;" src="http://img.users.51.la/2070176.asp" style="border:none" /&gt;&lt;/a&gt;
+      </noscript>
+    </li>
+  </div>
+</div>
+</body>
+</html>
